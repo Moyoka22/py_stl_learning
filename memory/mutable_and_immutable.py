@@ -41,6 +41,11 @@ def main():
     logging.info(f't is {t}')
     logging.info(f'The id of l is: {id(l)}')
     logging.info(f'The id of t is: {id(t)}')
+    afunc2(l[:],t) # * This time a copy is received and not l itself, the function cannot change the value
+    logging.info(f'l is {l}')
+    logging.info(f't is {t}')
+    logging.info(f'The id of l is: {id(l)}')
+    logging.info(f'The id of t is: {id(t)}')
 
 if __name__ == '__main__':
     main()
