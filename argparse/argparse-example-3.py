@@ -24,7 +24,7 @@ def parse_args():
     # py .\argparse-example-2.py subcommand2 -x a
     parser_b = subparsers.add_parser('subcommand2',help='Subparser b')
     parser_b.add_argument('qux')
-    parser_b.set_defaults(func=subcommand2)
+    parser_b.set_defaults(func=subcommand2) # * Sets arguments without them being specified on the command line
 
 
      
