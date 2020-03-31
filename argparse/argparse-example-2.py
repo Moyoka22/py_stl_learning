@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+"""Examples with subparsers"""
 import argparse
 import pprint
 
