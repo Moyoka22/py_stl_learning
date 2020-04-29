@@ -37,3 +37,7 @@ print(last) # 5
 print(deq) # deque[1, 2, 3, 4]
 
 # Accessing the middle of a deque is O(n)
+
+
+# ? Why is deque lowercase? 
+# * Because deque is a type not a class 
