@@ -39,5 +39,15 @@ print(deq) # deque[1, 2, 3, 4]
 # Accessing the middle of a deque is O(n)
 
 
+deq.rotate()
+print(deq) # deque([4, 1, 2, 3])
+
 # ? Why is deque lowercase? 
 # * Because deque is a type not a class 
+
+from itertools import count
+limited_deque = deque([],5)
+for i in range(10):
+    limited_deque.append(i)
+
+print(limited_deque) # deque([5, 6, 7, 8, 9], maxlen=5)
